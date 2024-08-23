@@ -1,4 +1,12 @@
-#+OPTIONS: ^:{} author:nil email:nil creator:nil timestamp:nil html-postamble:nil \n:nil toc:t |:t
+#+OPTIONS: ^:{} author:nil email:nil creator:nil timestamp:nil \n:nil toc:t |:t num:t H:6
+
+#+TITLE: 20240821に共有された学び
+#+pandoc-emphasis-pre: "\*\*"
+#+pandoc-emphasis-post: "\*\*"
+
+# \n --> Toggles whether to preserve line breaks (org-export-preserve-breaks).
+# H  -->  Set the number of headline levels for export (org-export-headline-levels). Below that level, headlines are treated differently. In most backends, they become list items.
+# |  --> Toggle inclusion of tables (org-export-with-tables).
 
 2024/08/21(水) に共有された学びを記しておきます。
 

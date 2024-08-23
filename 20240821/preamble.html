@@ -1,0 +1,64 @@
+<style>
+    .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.6s;
+        margin-bottom: 15px;
+    }
+
+    .alert.success {background-color: #04AA6D;}
+    .alert.info {background-color: #2196F3;}
+    .alert.warning {background-color: #ff9800;}
+
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .closebtn:hover {
+        color: black;
+    }
+</style>
+
+<div class="alert warning">
+    <span class="closebtn">&times;</span>
+    <strong>注意!</strong> firefox だと なぜか 以下の2つがうまく動きません。
+
+    <ul>
+        <li>左端の見出しの折り畳みと展開</li>
+        <ul>
+            <li>クリックすると新しいタブが開かれてしまう</li>
+            <li>新しいタブで開かれたページの位置は先頭のまま。ページ内リンク（アンカー）までのスクロールダウンは行われない。</li>
+            <li>新しいタブで開かれたページでの見出しは折り畳まれたまま。</li>
+            <ul>
+                <li>一方、新しいタブではなく、元々開いていたタブでは、期待通りに、折り畳まれていた見出しが展開される。</li>
+            </ul>
+        </ul>
+        <li>目次のリンクからの移動</li>
+        <ul>
+            <li>新しいタブが開かれてしまう</li>
+            <li>新しいタブで開かれたページの位置は先頭のまま。ページ内リンク（アンカー）までのスクロールダウンは行われない。</li>
+        </ul>
+    </ul>
+</div>
+
+<script>
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.opacity = "0";
+            setTimeout(function(){ div.style.display = "none"; }, 600);
+        }
+    }
+</script>
