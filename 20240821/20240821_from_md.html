@@ -1,0 +1,389 @@
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>20240821に共有された学び</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <style>
+      .alert {
+          padding: 20px;
+          background-color: #f44336;
+          color: white;
+          opacity: 1;
+          transition: opacity 0.6s;
+          margin-bottom: 15px;
+      }
+
+      .alert.success {background-color: #04AA6D;}
+      .alert.info {background-color: #2196F3;}
+      .alert.warning {background-color: #ff9800;}
+
+      .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+      }
+
+      .closebtn:hover {
+          color: black;
+      }
+  </style>
+
+  <div class="alert warning">
+      <span class="closebtn">&times;</span>
+      <strong>注意!</strong> firefox だと以下の2つがうまく動かないことがあります。
+
+      <ul>
+          <li>左端の見出しの折り畳みと展開</li>
+          <ul>
+              <li>クリックすると新しいタブが開かれてしまう</li>
+              <li>新しいタブで開かれたページの位置は先頭のまま。ページ内リンク（アンカー）までのスクロールダウンは行われない。</li>
+              <li>新しいタブで開かれたページでの見出しは折り畳まれたまま。</li>
+              <ul>
+                  <li>一方、新しいタブではなく、元々開いていたタブでは、期待通りに、折り畳まれていた見出しが展開される。</li>
+              </ul>
+          </ul>
+          <li>目次のリンクからの移動</li>
+          <ul>
+              <li>新しいタブが開かれてしまう</li>
+              <li>新しいタブで開かれたページの位置は先頭のまま。ページ内リンク（アンカー）までのスクロールダウンは行われない。</li>
+          </ul>
+      </ul>
+  </div>
+
+  <script>
+      var close = document.getElementsByClassName("closebtn");
+      var i;
+
+      for (i = 0; i < close.length; i++) {
+          close[i].onclick = function(){
+              var div = this.parentElement;
+              div.style.opacity = "0";
+              setTimeout(function(){ div.style.display = "none"; }, 600);
+          }
+      }
+  </script>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">20240821に共有された学び</span>
+        <ul class="nav pull-right doc-info">
+                            </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div id="TOC" class="span3">
+        <div class="well toc">
+
+        <ul>
+        <li><a href="#jupyter-でセルを実行するときの注意" id="toc-jupyter-でセルを実行するときの注意"><span class="toc-section-number">1</span> jupyter でセルを実行するときの注意</a></li>
+        <li><a href="#ショートカット" id="toc-ショートカット"><span class="toc-section-number">2</span> ショートカット</a>
+        <ul>
+        <li><a href="#ショートカットキーを覚える方針" id="toc-ショートカットキーを覚える方針"><span class="toc-section-number">2.1</span> ショートカットキーを覚える方針</a></li>
+        <li><a href="#ショートカットの一覧を表示する方法" id="toc-ショートカットの一覧を表示する方法"><span class="toc-section-number">2.2</span> ショートカットの一覧を表示する方法</a></li>
+        </ul></li>
+        <li><a href="#インデント" id="toc-インデント"><span class="toc-section-number">3</span> インデント</a>
+        <ul>
+        <li><a href="#制御構文の入れ子を深くしない" id="toc-制御構文の入れ子を深くしない"><span class="toc-section-number">3.1</span> 制御構文の入れ子を深くしない</a></li>
+        <li><a href="#関数メソッドを長くしない" id="toc-関数メソッドを長くしない"><span class="toc-section-number">3.2</span> 関数（メソッド）を長くしない</a></li>
+        <li><a href="#自分で編集せずvscodeなどのエディタ統合開発環境に任せる" id="toc-自分で編集せずvscodeなどのエディタ統合開発環境に任せる"><span class="toc-section-number">3.3</span> 自分で編集せず、vscodeなどのエディタ（統合開発環境）に任せる</a></li>
+        <li><a href="#インデントの深さ階層を可視化させる" id="toc-インデントの深さ階層を可視化させる"><span class="toc-section-number">3.4</span> インデントの深さ（階層）を可視化させる</a>
+        <ul>
+        <li><a href="#拡張機能で可視化する方法" id="toc-拡張機能で可視化する方法"><span class="toc-section-number">3.4.1</span> 拡張機能で可視化する方法</a></li>
+        <li><a href="#標準機能で可視化する方法" id="toc-標準機能で可視化する方法"><span class="toc-section-number">3.4.2</span> 標準機能で可視化する方法</a></li>
+        </ul></li>
+        </ul></li>
+        </ul>
+
+        </div>
+      </div>
+            <div class="span9">
+
+      
+      <ul>
+<li><a href="#jupyter-でセルを実行するときの注意"><span class="toc-section-number">1</span> jupyter でセルを実行するときの注意</a></li>
+<li><a href="#ショートカット"><span class="toc-section-number">2</span> ショートカット</a>
+<ul>
+<li><a href="#ショートカットキーを覚える方針"><span class="toc-section-number">2.1</span> ショートカットキーを覚える方針</a></li>
+<li><a href="#ショートカットの一覧を表示する方法"><span class="toc-section-number">2.2</span> ショートカットの一覧を表示する方法</a></li>
+</ul></li>
+<li><a href="#インデント"><span class="toc-section-number">3</span> インデント</a>
+<ul>
+<li><a href="#制御構文の入れ子を深くしない"><span class="toc-section-number">3.1</span> 制御構文の入れ子を深くしない</a></li>
+<li><a href="#関数メソッドを長くしない"><span class="toc-section-number">3.2</span> 関数（メソッド）を長くしない</a></li>
+<li><a href="#自分で編集せずvscodeなどのエディタ統合開発環境に任せる"><span class="toc-section-number">3.3</span> 自分で編集せず、vscodeなどのエディタ（統合開発環境）に任せる</a></li>
+<li><a href="#インデントの深さ階層を可視化させる"><span class="toc-section-number">3.4</span> インデントの深さ（階層）を可視化させる</a>
+<ul>
+<li><a href="#拡張機能で可視化する方法"><span class="toc-section-number">3.4.1</span> 拡張機能で可視化する方法</a></li>
+<li><a href="#標準機能で可視化する方法"><span class="toc-section-number">3.4.2</span> 標準機能で可視化する方法</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>2024/08/21(水) に共有された学びを記しておきます。</p>
+<h1 data-number="1" id="jupyter-でセルを実行するときの注意"><span class="header-section-number">1</span> jupyter でセルを実行するときの注意</h1>
+<p>google colab に限らず、jupyter のノートブックでは、 セルの間に以下の2つの関係性が存在します。 注意すべきは、この2つが必ずしも一致しないことです。</p>
+<ul>
+<li>画面に表示される位置関係</li>
+<li>実行順序の前後関係</li>
+</ul>
+<p>この不一致のために、 まだ実行されていないセルが上部にあるのに、 下部のセルを実行してしまい、 実は、上部のセルに下部のセルが依存していて、 「そんな変数は存在しません」というようなエラーが発生してしまうことがあります。</p>
+<p>この間違いを防ぐためには、 角括弧で囲まれた番号がセルの左上隅に表示されているかどうかを確認します。</p>
+<p>セルが未実行の場合には、角括弧のみが表示され、数字は表示されません。</p>
+<img src="./20240821_jupyter_実行順序_未実行.png" alt="セルが未実行の場合の、セルに左肩に実行番号が表示されていない様子" />
+
+<p>一方、セルが実行済みの場合には、その実行順序が角括弧で囲まれて表示されます。</p>
+<img src="20240821_jupyter_実行順序_実行後.png" alt="セルが実行済みの場合の、セルに左肩に実行番号が表示されている様子" />
+
+<h1 data-number="2" id="ショートカット"><span class="header-section-number">2</span> ショートカット</h1>
+<p>google colab に限らず、jupyter のノートブックでは種々のショートカットキーが使えます。 （google colab特有のショートカットキーもあるでしょう。）</p>
+<h2 data-number="2.1" id="ショートカットキーを覚える方針"><span class="header-section-number">2.1</span> ショートカットキーを覚える方針</h2>
+<ul>
+<li>全てを覚える必要はありません。必要なものだけ覚えましょう。</li>
+<li>何が必要かどうかは貴殿次第です。
+<ul>
+<li>プロジェクトに依るかもしれません。</li>
+<li>お使いのマウスやキーボードの使い勝手に依るかもしれません。</li>
+</ul></li>
+<li>いきなり暗記する必要はありません。少しずつ覚え、身体化（無意識化）させましょう。</li>
+</ul>
+<h2 data-number="2.2" id="ショートカットの一覧を表示する方法"><span class="header-section-number">2.2</span> ショートカットの一覧を表示する方法</h2>
+<p>ショートカットの一覧を表示方法には、少なくとも、以下の2つがあります。</p>
+<ul>
+<li>ツールバーからメニューを辿る方法</li>
+<li>ショートカットを用いる方法</li>
+</ul>
+<p><strong><strong>ツールバーからメニューを辿る方法</strong></strong></p>
+<p>ツールバーの「ツール」 → 「キーボードショートカット」の順に選択します。</p>
+<img src="./20240821_ショートカット一覧の表示方法.png" alt="Google Colaboratory において、キーボードショートカットの一覧を表示するためにツールバー上の選択すべき項目" />
+
+<p><strong><strong>ショートカットを用いる方法</strong></strong></p>
+<p>ショートカットの一覧を表示する機能自体のショートカットもあります。 上のスクリーンショットに「Ctrl+M H」と表示されているのがそれです。</p>
+<p>この表示「Ctrl+M H」は以下のように解釈します。</p>
+<ol type="1">
+<li>cntrol キーとアルファベットのm（エム）を同時に押す。
+<ul>
+<li>押すべきアルファベットのm（エム）は小文字です。下のスクリーンショットでは大文字の「M」が描画されていますが、小文字を押します。</li>
+</ul></li>
+<li>一度、全ての指を離します。</li>
+<li>アルファベットのh（エイチ）のみを単独で押す。
+<ul>
+<li>押すべきアルファベットのh（エイチ）は小文字です。下のスクリーンショットでは大文字の「H」が描画されていますが、小文字を押します。</li>
+</ul></li>
+</ol>
+<h1 data-number="3" id="インデント"><span class="header-section-number">3</span> インデント</h1>
+<p>多くのプログラミング言語では、論理構造の範囲を括弧（丸括弧 や 波括弧）で表現します。</p>
+<p>例えば、nodejs（javascript）では、 if の条件文は 丸括弧で囲まれ、条件合致時に処理される内容は波括弧で囲まれます。</p>
+<p>一方、Python では 論理構造の範囲をインデントで表現します。</p>
+<p>Python以外の多くのプログラミング言語ではインデントの深さ（半角空白文字の数）は不問なので、 他のプログラミング言語に慣れた人ほど、 Python のインデントを患らわしく感じるようです。</p>
+<p>しかし、Python は機械学習（いわゆる AI）の実装における デファクトスタンダード（de facto standard）なプログラミング言語なので、 インデント方式が世界中で受け入れられていると言えるかもしれません。</p>
+<p>いずれにしろ、インデントの深さを的確に記述することに慣れるしかありません。</p>
+<p>だた時間に任せて慣れるだけではなく、以下のような工夫をすることでバグを減らすことができます。</p>
+<ul>
+<li>制御構文の入れ子を深くしない</li>
+<li>関数（メソッド）を長くしない</li>
+<li>自分で編集せず、vscodeなどのエディタ（統合開発環境）に任せる</li>
+<li>インデントの深さ（階層）を可視化させる</li>
+</ul>
+<p>それぞれの詳細を記します。</p>
+<h2 data-number="3.1" id="制御構文の入れ子を深くしない"><span class="header-section-number">3.1</span> 制御構文の入れ子を深くしない</h2>
+<p>ifブロック、forブロック、whileブロックなどを組み合わせて入れ子にせざるを得ないこともあると思います。</p>
+<p>その場合でも、入れ子の数は最大でも3つくらいに抑えましょう。</p>
+<p>それ以上になると、インデントの深さが一瞥（一目）では判読できなくなり、 見間違えて（読み間違えて）、バグに繋がります。</p>
+<p>なお、入れ子を深くすると、インデントが横に長く（多く）なるので、 入れ子を深くしないことを、僕は勝手に、『「水平方向」の抑制』と呼んでいます。</p>
+<h2 data-number="3.2" id="関数メソッドを長くしない"><span class="header-section-number">3.2</span> 関数（メソッド）を長くしない</h2>
+<p><strong><strong>2スクロール分、80行</strong></strong></p>
+<p>制御構造の開始地点と終了地点が離れすぎてしまい、 制御構造の開始地点がスクリーン（ディスプレイ）の表示範囲外である場合には、 インデントの判読は原理的に不可能です。</p>
+<p>そこで、制御構造の行数は、 概ね画面2スクロール分、80行程度に抑えましょう。</p>
+<p>2スクロール分ならば、上下に page up または page down することで、 制御構造の全体をパッと見ることができ、 インデントの判読が何とかできるでしょう。</p>
+<p><strong><strong>関数の分割</strong></strong></p>
+<p>ここまででは制御構造の行数に関して記してきましたが、 実際上は、一般的な制御構造ではなく、 関数（メソッド）の行数を80行程度に抑えましょう。</p>
+<p>もし、関数が80行を大きく超えてしまう場合には、 その関数を複数の関数に分割しましょう。</p>
+<p>関数に関して、以下のような暗黙の前提をおいているかもしれません。</p>
+<ul>
+<li>複数、特に巨大な回数、呼ばれるから関数にする</li>
+<li>複数の箇所から呼ばれるから関数にする</li>
+</ul>
+<p>しかし、それらは思い込みにすぎません。</p>
+<p>特定の箇所からしか呼ばれなくても、処理を関数にまとめる意義はあります。 呼ばれる回数が少なくても、処理を関数にまとめる意義はあります。 それらの意義とは保守性を高めることなどです。</p>
+<p><strong><strong>「水平方向」への副次的効果</strong></strong></p>
+<p>また、関数（メソッド）の行数が80行程度に抑えられば、 自然と『「水平方向」の抑制』も効いてくるでしょう。</p>
+<p><strong><strong>「垂直方向」の抑制</strong></strong></p>
+<p>なお、入れ子を深くしないことを『「水平方向」の抑制』と呼ぶのに対して、 行数の抑制は『「垂直方向」の抑制』と呼ぼうと思います。</p>
+<h2 data-number="3.3" id="自分で編集せずvscodeなどのエディタ統合開発環境に任せる"><span class="header-section-number">3.3</span> 自分で編集せず、vscodeなどのエディタ（統合開発環境）に任せる</h2>
+<p>最近のエディタを使っているならば、「for i in range(3):」と打ち込んだあとで改行したら、下のように、forよりもインデントを下げた位置にカーソルが移動するはずです。</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    x <span class="co">#←改行後、xの位置にカーソルが自動的に置かれる。</span></span></code></pre></div>
+<p>また、もしインデントが明らかに間違っていたら、それを警告してくれたり、自動的に修正してくれる機能もあるはずです。 （僕自身があまりVsCodeを活用していないので、希望的予測になっています。）</p>
+<p>ゆえに、インデントの調整はまずはそれらの機能に任せ、 手動での調整はその後の微調整と位置付けるべきです。</p>
+<p>とはいえ、全く手動での調整が不要になることはなく、むしろ、そこそこ登場します。 なぜならば、論理構造の終了地点で、インデントを浅くする必要があるからです。</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">&quot;choco&quot;</span> <span class="co">#←改行後、xの位置にカーソルが自動的に置かれる。</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">&quot;banana&quot;</span> <span class="co">#この行以降は for ブロックの外なので、インデントを浅くする必要がある。</span></span></code></pre></div>
+<p>なお、インデントを手動で調整するときに押すべきキーは、どのエディタでも、概ね以下の表の通りのはずです。</p>
+<table>
+<thead>
+<tr class="header">
+<th>目的</th>
+<th>押すべきキー</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>インデントを深くする</td>
+<td>tab</td>
+</tr>
+<tr class="even">
+<td>インデントを浅くする</td>
+<td>shift + tab</td>
+</tr>
+</tbody>
+</table>
+<h2 data-number="3.4" id="インデントの深さ階層を可視化させる"><span class="header-section-number">3.4</span> インデントの深さ（階層）を可視化させる</h2>
+<h3 data-number="3.4.1" id="拡張機能で可視化する方法"><span class="header-section-number">3.4.1</span> 拡張機能で可視化する方法</h3>
+<p>インデントの深さの判読、つまりは半角空白の個数を 目視に頼るのには、読み間違える懸念が残ります。</p>
+<p>VsCodeを使っているならば、以下の拡張機能を導入することで、 インデントの背景色を階層ごとに別々の色に塗りわけ、 インデントの深さの判読を助けることができます。</p>
+<ul>
+<li>indent-rainbow - Visual Studio Marketplace
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow</a></li>
+</ul></li>
+</ul>
+<img src="./20240821_oderwat_Indent-Rainbow.png" alt="VsCode の拡張機能 indent-rainbow のページに掲載されている、インデントが虹色に色付けされている様子" />
+
+<h3 data-number="3.4.2" id="標準機能で可視化する方法"><span class="header-section-number">3.4.2</span> 標準機能で可視化する方法</h3>
+<p>ただし、この拡張機能は導入は簡単ですが、空行には色付けされないという難点があります。 また、VsCode自体も更新されており、インデントの可視化が標準機能に取り込まれているそうです。 その標準機能を有効にするには一手間必要ですが、設定する価値はあると思いますので、下記のブログをご参照ください。</p>
+<ul>
+<li>VS Codeのindent-rainbowは不要になりました！ #VSCode - Qiita
+<ul>
+<li><a href="https://qiita.com/htcd/items/21266f6472ac2c39933e">https://qiita.com/htcd/items/21266f6472ac2c39933e</a></li>
+</ul></li>
+<li>虹色のVSCodeでテンション上げて開発する！ | cloud.config Tech Blog
+<ul>
+<li><a href="https://tech-blog.cloud-config.jp/2021-12-08-vscode-rainbow/">https://tech-blog.cloud-config.jp/2021-12-08-vscode-rainbow/</a></li>
+</ul></li>
+</ul>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
