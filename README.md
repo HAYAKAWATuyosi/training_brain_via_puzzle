@@ -5,7 +5,9 @@
     - <https://www.amazon.co.jp/dp/4798163821>
 
 # 以下に、勉強会で共有された学びを随時追加していきます
-    - [20240821の分](./20240821/20240821.html)
+
+- [20240821の分](./20240821/20240821.html)
 
 # gitリポジトリは以下の通りです
-    - https://github.com/HAYAKAWATuyosi/training_brain_via_puzzle
+
+- https://github.com/HAYAKAWATuyosi/training_brain_via_puzzle
