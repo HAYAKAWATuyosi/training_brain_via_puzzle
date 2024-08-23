@@ -7,9 +7,7 @@
 # 以下に、勉強会で共有された学びを随時追加していきます
 
 - [20240821の分](./20240821/20240821.html)
-    - [html](./20240821/20240821.html)
-    - [markdown](./20240821/20240821.md)
 
-# gitリポジトリは以下の通りです
+# gitリポジトリ
 
 - <https://github.com/HAYAKAWATuyosi/training_brain_via_puzzle>
